@@ -21,3 +21,22 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- NeoTree
+keymap.set("n", "<leader>e", "<cmd>Neotree toggle position=left<cr>", { desc = "Toggle Explorer Left " })
+keymap.set("n", "<leader>d", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
+keymap.set("n", "<leader>o", function()
+	if vim.bo.filetype == "neo-tree" then
+		vim.cmd("wincmd p")
+	else
+		vim.cmd.Neotree("focus")
+	end
+end, { desc = "Toggle Explorer Focus" })
+keymap.set("n", "-", function()
+	require("neo-tree.command").execute({
+		toggle = true,
+		action = "focus",
+		position = "float",
+	})
+end, { desc = "Toggle Explorer Float" })
+
