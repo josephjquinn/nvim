@@ -45,8 +45,8 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 
-
-
 -- lazygit
 keymap.set("n", "<leader>g", "<cmd>LazyGit<cr>")
 
+-- alpha 
+keymap.set("n", "<leader>h", "<cmd>Alpha<cr>")
