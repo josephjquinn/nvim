@@ -43,7 +43,8 @@ end, { desc = "Toggle Explorer Float" })
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
-keymap.set("n", "<leader>fs", "<cmd>Telescope grep_string<cr>")
+keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
+
 
 
 -- lazygit
