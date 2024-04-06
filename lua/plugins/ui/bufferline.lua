@@ -30,9 +30,10 @@ return {
                 offsets = {
                     {
                         filetype = "neo-tree",
-                        text = "Neo Tree",
-                        highlight = "None",
-                        padding = 1,
+                        text = "File Explorer",
+                        text_align = "center",
+
+                    separator = true
                     },
                 },
                 color_icons = true,
