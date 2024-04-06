@@ -14,8 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 require("config.options")
 require("config.keymaps")
 
-local plugins = "plugins"
+local plugins = {
+    { import = "plugins.ui" },
+   { import = "plugins.ide" },
+    --{ import = "plugins.lsp" },
+    --{ import = "plugins.editor" },
 
+    { import = "plugins" }
+}
 local opts = {  checker = {
     enabled = true,
     notify = false,

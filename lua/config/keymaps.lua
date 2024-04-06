@@ -35,6 +35,7 @@ end, { desc = "Toggle Explorer Focus" })
 keymap.set("n", "-", function()
 	require("neo-tree.command").execute({
 		toggle = true,
+    reveal = true,
 		action = "focus",
 		position = "float",
 	})
@@ -50,3 +51,7 @@ keymap.set("n", "<leader>g", "<cmd>LazyGit<cr>")
 
 -- alpha 
 keymap.set("n", "<leader>h", "<cmd>Alpha<cr>")
+
+-- transparency
+keymap.set("n", "<leader>-", "<cmd>TransparentToggle<cr>")
+
