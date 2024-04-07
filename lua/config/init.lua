@@ -17,7 +17,7 @@ require("config.keymaps")
 local plugins = {
     { import = "plugins.ui" },
    { import = "plugins.ide" },
-    --{ import = "plugins.lsp" },
+    { import = "plugins.lsp" },
     { import = "plugins.editor" },
 
 }
