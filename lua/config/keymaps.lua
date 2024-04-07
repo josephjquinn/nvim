@@ -22,6 +22,11 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- Buffers
+keymap.set("n", "<leader>c", "<cmd>Bdelete<cr>", { desc = "Delete Buffer" })
+keymap.set("n", "<leader>m", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+keymap.set("n", "<leader>n", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
+
 -- NeoTree
 keymap.set("n", "<leader>e", "<cmd>Neotree toggle position=left<cr>", { desc = "Toggle Explorer Left " })
 keymap.set("n", "<leader>d", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
