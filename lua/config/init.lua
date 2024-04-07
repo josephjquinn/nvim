@@ -18,7 +18,7 @@ local plugins = {
     { import = "plugins.ui" },
    { import = "plugins.ide" },
     --{ import = "plugins.lsp" },
-    --{ import = "plugins.editor" },
+    { import = "plugins.editor" },
 
 }
 local opts = {  checker = {
