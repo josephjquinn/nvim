@@ -20,7 +20,6 @@ local plugins = {
     --{ import = "plugins.lsp" },
     --{ import = "plugins.editor" },
 
-    { import = "plugins" }
 }
 local opts = {  checker = {
     enabled = true,
