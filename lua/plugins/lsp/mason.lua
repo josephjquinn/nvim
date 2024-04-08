@@ -38,13 +38,14 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"stylua", 
+				"stylua",
 				"flake8",
 				"luacheck",
 				"black",
 				"prettier",
 				"eslint",
 				"stylelint",
+				"pylint",
 			},
 		})
 	end,
