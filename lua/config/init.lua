@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("config.options")
 require("config.keymaps")
+require("config.autocommands")
 
 local plugins = {
     { import = "plugins.ui" },
