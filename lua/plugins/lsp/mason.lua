@@ -46,6 +46,7 @@ return {
 				"eslint",
 				"stylelint",
 				"pylint",
+				"eslint_d",
 			},
 		})
 	end,
