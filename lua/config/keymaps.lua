@@ -64,3 +64,6 @@ keymap.set("n", "<leader>-", "<cmd>TransparentToggle<cr>")
 keymap.set("n", "<leader>rj", "<cmd>TermExec cmd='java %'<CR>")
 keymap.set("n", "<leader>rp", "<cmd>TermExec cmd='python3 %'<CR>")
 
+-- Terminal
+keymap.set("n", "<leader>tf", "<cmd>ToggleTerm dir='%:p:h'<CR>", { desc = "ToggleTerm Float" })
+keymap.set("n", "<leader>th", "<cmd>ToggleTerm dir='%:p:h' direction=horizontal<CR>", { desc = "ToggleTerm Horizontal" })
