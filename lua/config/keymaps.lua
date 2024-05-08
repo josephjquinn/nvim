@@ -60,3 +60,7 @@ keymap.set("n", "<leader>h", "<cmd>Alpha<cr>")
 -- transparency
 keymap.set("n", "<leader>-", "<cmd>TransparentToggle<cr>")
 
+-- toggle term code run
+keymap.set("n", "<leader>rj", "<cmd>TermExec cmd='java %'<CR>")
+keymap.set("n", "<leader>rp", "<cmd>TermExec cmd='python3 %'<CR>")
+
