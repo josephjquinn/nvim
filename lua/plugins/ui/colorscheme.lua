@@ -1,7 +1,17 @@
 return {
-	"folke/tokyonight.nvim",
-	priority = 1000,
-	config = function()
-		vim.cmd("colorscheme tokyonight")
-	end,
+	{
+		"sainnhe/gruvbox-material",
+	},
+	{
+		"Mofiqul/dracula.nvim",
+		config = function()
+			vim.cmd([[colorscheme dracula]])
+		end,
+	},
+	{
+		"folke/tokyonight.nvim",
+	},
+	{
+		"nyoom-engineering/oxocarbon.nvim",
+	},
 }
