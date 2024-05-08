@@ -5,8 +5,6 @@ return {
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
         vim.keymap.set("n", "<leader><Tab>", ":BufferLineCycleNext <CR>", { silent = true, desc = "Cycle tabs" })
-        vim.keymap.set("n", "<leader>bn", ":BufferLineCycleNext <CR>", { silent = true, desc = "Next tab" })
-        vim.keymap.set("n", "<leader>bp", ":BufferLineCyclePrev <CR>", { silent = true, desc = "NextPrevious tab" })
 
         local bufferline = require("bufferline")
         require('transparent').clear_prefix('BufferLine')

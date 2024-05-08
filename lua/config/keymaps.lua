@@ -1,10 +1,10 @@
+--setup
 vim.g.mapleader = " "
+local keymap = vim.keymap
 
-local keymap = vim.keymap -- for conciseness
-
+-- general
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>ah", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
@@ -40,7 +40,7 @@ end, { desc = "Toggle Explorer Focus" })
 keymap.set("n", "-", function()
 	require("neo-tree.command").execute({
 		toggle = true,
-    reveal = true,
+		reveal = true,
 		action = "focus",
 		position = "float",
 	})
@@ -54,7 +54,7 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 -- lazygit
 keymap.set("n", "<leader>g", "<cmd>LazyGit<cr>")
 
--- alpha 
+-- alpha
 keymap.set("n", "<leader>h", "<cmd>Alpha<cr>")
 
 -- transparency
@@ -64,6 +64,25 @@ keymap.set("n", "<leader>-", "<cmd>TransparentToggle<cr>")
 keymap.set("n", "<leader>rj", "<cmd>TermExec cmd='java %'<CR>")
 keymap.set("n", "<leader>rp", "<cmd>TermExec cmd='python3 %'<CR>")
 
--- Terminal
+-- terminal
 keymap.set("n", "<leader>tf", "<cmd>ToggleTerm dir='%:p:h'<CR>", { desc = "ToggleTerm Float" })
-keymap.set("n", "<leader>th", "<cmd>ToggleTerm dir='%:p:h' direction=horizontal<CR>", { desc = "ToggleTerm Horizontal" })
+keymap.set(
+	"n",
+	"<leader>th",
+	"<cmd>ToggleTerm dir='%:p:h' direction=horizontal<CR>",
+	{ desc = "ToggleTerm Horizontal" }
+)
+
+-- compiler
+keymap.set("n", "<leader>co", "<cmd>CompilerOpen<cr>", { desc = "Open Compiler" })
+keymap.set(
+	"n",
+	"<leader>ci",
+	"<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)
+		.. "<cmd>CompilerRedo<cr>",
+	{ desc = "Redo last compile" }
+)
+keymap.set("n", "<leader>cr", "<cmd>CompilerToggleResults<cr>", { desc = "Toggle compiler results" })
+
+-- sniprun
+keymap.set("n", "<leader>rr", "<Plug>SnipRun", { desc = "Snip Run" })
