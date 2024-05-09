@@ -28,7 +28,8 @@ return {
 			-- list of servers for mason to install
 			ensure_installed = {
 				"lua_ls",
-				"pyright",
+        "pyright",
+				"ruff",
 				"tsserver",
 				"cssls",
 			},
@@ -41,7 +42,6 @@ return {
 				"stylua",
 				"flake8",
 				"luacheck",
-				"black",
 				"prettier",
 				"eslint",
 				"stylelint",

@@ -103,15 +103,18 @@ return {
 				})
 			end,
 			["pyright"] = function()
-				-- configure lua server (with special settings)
 				lspconfig["pyright"].setup({
 					capabilities = capabilities,
 					settings = {
-            python = {
-              analysis = {
-                reportUnusedImport = false,
-              }
-            }
+						pyright = {
+							disableOrganizeImports = true, -- Using Ruff
+						},
+						python = {
+							analysis = {
+								ignore = { "*" }, -- Using Ruff
+								typeCheckingMode = "off", -- Using mypy
+							},
+						},
 					},
 				})
 			end,

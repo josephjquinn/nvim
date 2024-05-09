@@ -19,11 +19,14 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = {
+					"ruff_fix", -- To fix lint errors. (ruff with argument --fix)
+					"ruff_format", -- To run the formatter. (ruff with argument format)
+				},
 			},
 		})
 
-		vim.keymap.set({ "n", "v" }, "<leader>b", function()
+		vim.keymap.set({ "n", "v" }, "<leader>ll", function()
 			conform.format({
 				lsp_fallback = true,
 				async = false,

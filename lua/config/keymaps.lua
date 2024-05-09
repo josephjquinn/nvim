@@ -29,7 +29,7 @@ keymap.set("n", "<leader>n", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
 
 -- NeoTree
 keymap.set("n", "<leader>e", "<cmd>Neotree toggle position=left<cr>", { desc = "Toggle Explorer Left " })
-keymap.set("n", "<leader>d", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
+--keymap.set("n", "<leader>d", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
 keymap.set("n", "<leader>o", function()
 	if vim.bo.filetype == "neo-tree" then
 		vim.cmd("wincmd p")
@@ -52,7 +52,7 @@ keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>")
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 
 -- lazygit
-keymap.set("n", "<leader>g", "<cmd>LazyGit<cr>")
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>")
 
 -- alpha
 keymap.set("n", "<leader>h", "<cmd>Alpha<cr>")
