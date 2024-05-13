@@ -26,44 +26,96 @@ return {
 				local opts = { buffer = ev.buf, silent = true }
 
 				-- set keybinds
-				opts.desc = "Show LSP references"
-				keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+				keymap.set(
+					"n",
+					"<leader>gR",
+					"<cmd>Telescope lsp_references<CR>",
+					vim.tbl_extend("force", opts, { desc = "Show LSP references" })
+				)
 
-				opts.desc = "Go to declaration"
-				keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+				keymap.set(
+					"n",
+					"<leader>gD",
+					vim.lsp.buf.declaration,
+					vim.tbl_extend("force", opts, { desc = "Go to declaration" })
+				)
 
-				opts.desc = "Show LSP definitions"
-				keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+				keymap.set(
+					"n",
+					"<leader>gd",
+					"<cmd>Telescope lsp_definitions<CR>",
+					vim.tbl_extend("force", opts, { desc = "Show LSP definitions" })
+				)
 
-				opts.desc = "Show LSP implementations"
-				keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
+				keymap.set(
+					"n",
+					"<leader>gi",
+					"<cmd>Telescope lsp_implementations<CR>",
+					vim.tbl_extend("force", opts, { desc = "Show LSP implementations" })
+				)
 
-				opts.desc = "Show LSP type definitions"
-				keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
+				keymap.set(
+					"n",
+					"<leader>gt",
+					"<cmd>Telescope lsp_type_definitions<CR>",
+					vim.tbl_extend("force", opts, { desc = "Show LSP type definitions" })
+				)
 
-				opts.desc = "See available code actions"
-				keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+				keymap.set(
+					{ "n", "v" },
+					"<leader>ca",
+					vim.lsp.buf.code_action,
+					vim.tbl_extend("force", opts, { desc = "See available code actions" })
+				)
 
-				opts.desc = "Smart rename"
-				keymap.set("n", "<leader>ur", vim.lsp.buf.rename, opts) -- smart rename
+				keymap.set(
+					"n",
+					"<leader>cr",
+					vim.lsp.buf.rename,
+					vim.tbl_extend("force", opts, { desc = "Smart rename" })
+				)
 
-				opts.desc = "Show buffer diagnostics"
-				keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
+				keymap.set(
+					"n",
+					"<leader>D",
+					"<cmd>Telescope diagnostics bufnr=0<CR>",
+					vim.tbl_extend("force", opts, { desc = "Show buffer diagnostics" })
+				)
 
-				opts.desc = "Show line diagnostics"
-				keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts) -- show diagnostics for line
+				keymap.set(
+					"n",
+					"<leader>d",
+					vim.diagnostic.open_float,
+					vim.tbl_extend("force", opts, { desc = "Show line diagnostics" })
+				)
 
-				opts.desc = "Go to previous diagnostic"
-				keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
+				keymap.set(
+					"n",
+					"[d",
+					vim.diagnostic.goto_prev,
+					vim.tbl_extend("force", opts, { desc = "Go to previous diagnostic" })
+				)
 
-				opts.desc = "Go to next diagnostic"
-				keymap.set("n", "]d", vim.diagnostic.goto_next, opts) -- jump to next diagnostic in buffer
+				keymap.set(
+					"n",
+					"]d",
+					vim.diagnostic.goto_next,
+					vim.tbl_extend("force", opts, { desc = "Go to next diagnostic" })
+				)
 
-				opts.desc = "Show documentation for what is under cursor"
-				keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+				keymap.set(
+					"n",
+					"K",
+					vim.lsp.buf.hover,
+					vim.tbl_extend("force", opts, { desc = "Show documentation for what is under cursor" })
+				)
 
-				opts.desc = "Restart LSP"
-				keymap.set("n", "<leader>us", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+				keymap.set(
+					"n",
+					"<leader>cu",
+					":LspRestart<CR>",
+					vim.tbl_extend("force", opts, { desc = "Restart LSP" })
+				)
 			end,
 		})
 
