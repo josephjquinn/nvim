@@ -10,7 +10,7 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
 			svelte = { "eslint_d" },
-			python = { "ruff", "flake8", "pylint" },
+			python = { "pylint", "flake8" },
 		}
 
 		-- Set pylint to work in virtualenv
