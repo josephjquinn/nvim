@@ -28,8 +28,8 @@ keymap.set("n", "<leader>m", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 keymap.set("n", "<leader>n", "<cmd>bprevious<cr>", { desc = "Previous Buffer" })
 
 -- NeoTree
-keymap.set("n", "<leader>e", "<cmd>Neotree toggle position=left<cr>", { desc = "Toggle Explorer Left " })
---keymap.set("n", "<leader>d", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
+-- keymap.set("n", "<leader>e", "<cmd>Neotree toggle position=left<cr>", { desc = "Toggle Explorer Left " })
+keymap.set("n", "<leader>e", "<cmd>Neotree toggle reveal position=left<cr>", { desc = "Toggle Explorer Left " })
 keymap.set("n", "<leader>o", function()
 	if vim.bo.filetype == "neo-tree" then
 		vim.cmd("wincmd p")

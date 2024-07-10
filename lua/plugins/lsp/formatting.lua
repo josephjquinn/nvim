@@ -19,6 +19,7 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
+        java = {"google_java_format"},
 				python = {
 					"ruff_fix", -- To fix lint errors. (ruff with argument --fix)
 					"ruff_format", -- To run the formatter. (ruff with argument format)

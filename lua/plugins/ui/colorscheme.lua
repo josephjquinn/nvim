@@ -4,12 +4,12 @@ return {
 	},
 	{
 		"Mofiqul/dracula.nvim",
-		config = function()
-			vim.cmd([[colorscheme dracula]])
-		end,
 	},
 	{
 		"folke/tokyonight.nvim",
+    config = function()
+      vim.cmd([[colorscheme tokyonight]])
+    end,
 	},
 	{
 		"nyoom-engineering/oxocarbon.nvim",
