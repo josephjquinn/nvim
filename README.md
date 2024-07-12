@@ -1,9 +1,11 @@
-![Screenshot 2024-07-12 at 6 47 56 PM](https://github.com/user-attachments/assets/a511e248-53b0-49b2-913d-3a5d01ff547f)
-![Screenshot 2024-07-12 at 6 47 42 PM](https://github.com/user-attachments/assets/35405c63-69ec-44cc-a912-3083bc641877)
-![Screenshot 2024-07-12 at 6 45 53 PM](https://github.com/user-attachments/assets/e53ff0e5-52d3-4ae4-a350-153b8506218b)
-![Screenshot 2024-07-12 at 6 45 33 PM](https://github.com/user-attachments/assets/3c0e94d9-5294-4d61-9228-135154de15fb)
+<p align="center">
+<img width="700" src="https://github.com/user-attachments/assets/3c0e94d9-5294-4d61-9228-135154de15fb">
+<img width="700" src="https://github.com/user-attachments/assets/e53ff0e5-52d3-4ae4-a350-153b8506218b">
+<img width="700" src="https://github.com/user-attachments/assets/35405c63-69ec-44cc-a912-3083bc641877">
+<img width="700" src="https://github.com/user-attachments/assets/a511e248-53b0-49b2-913d-3a5d01ff547f">
+</p>
 
-#### Installation
+### Installation
 
 1. Ensure you have Neovim installed on your system.
 
