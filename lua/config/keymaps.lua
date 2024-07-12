@@ -93,3 +93,6 @@ keymap.set("n", "<leader>lp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown Pre
 
 -- latex
 keymap.set("n", "<leader>lc", "<cmd>VimtexCompile<cr>", { desc = "Compile Latex" })
+
+-- toggle spell check
+keymap.set("n", "<leader>ls", "<cmd>set spell!<cr>", { desc = "Toggle spell check" })
