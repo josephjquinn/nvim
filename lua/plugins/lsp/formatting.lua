@@ -19,7 +19,8 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-        java = {"google_java_format"},
+				java = { "google_java_format" },
+				tex = { "latexindent" },
 				python = {
 					"ruff_fix", -- To fix lint errors. (ruff with argument --fix)
 					"ruff_format", -- To run the formatter. (ruff with argument format)
@@ -31,7 +32,7 @@ return {
 			conform.format({
 				lsp_fallback = true,
 				async = false,
-				timeout_ms = 1000,
+				timeout_ms = 10000,
 			})
 		end, { desc = "Format file or range (in visual mode)" })
 	end,

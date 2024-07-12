@@ -86,3 +86,10 @@ keymap.set("n", "<leader>cr", "<cmd>CompilerToggleResults<cr>", { desc = "Toggle
 
 -- sniprun
 keymap.set("n", "<leader>rr", "<Plug>SnipRun", { desc = "Snip Run" })
+
+-- markdown
+keymap.set("n", "<leader>lm", "<cmd>PapyrusStart<cr>", { desc = "Compile Markdown" })
+keymap.set("n", "<leader>lp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown Preview" })
+
+-- latex
+keymap.set("n", "<leader>lc", "<cmd>VimtexCompile<cr>", { desc = "Compile Latex" })

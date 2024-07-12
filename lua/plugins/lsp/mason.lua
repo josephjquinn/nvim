@@ -28,11 +28,11 @@ return {
 			-- list of servers for mason to install
 			ensure_installed = {
 				"lua_ls",
-        "pyright",
+				"pyright",
 				"ruff",
 				"tsserver",
 				"cssls",
-        "java_language_server",
+				"java_language_server",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -48,8 +48,9 @@ return {
 				"stylelint",
 				"pylint",
 				"eslint_d",
-        "debugpy",
-        "google-java-format",
+				"debugpy",
+				"google-java-format",
+				"latexindent",
 			},
 		})
 	end,
