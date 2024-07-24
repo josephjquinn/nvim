@@ -1,15 +1,15 @@
 return {
 	{
 		"sainnhe/gruvbox-material",
-		config = function()
-			vim.cmd([[colorscheme gruvbox-material]])
-		end,
 	},
 	{
 		"Mofiqul/dracula.nvim",
 	},
 	{
 		"folke/tokyonight.nvim",
+		config = function()
+			vim.cmd([[colorscheme tokyonight]])
+		end,
 	},
 	{
 		"nyoom-engineering/oxocarbon.nvim",
