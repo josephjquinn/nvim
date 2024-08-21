@@ -96,3 +96,9 @@ keymap.set("n", "<leader>lc", "<cmd>VimtexCompile<cr>", { desc = "Compile Latex"
 
 -- toggle spell check
 keymap.set("n", "<leader>ls", "<cmd>set spell!<cr>", { desc = "Toggle spell check" })
+
+-- leetcode
+keymap.set("n", "<leader>lr", "<cmd>Leet run<cr>", { desc = "Run Leetcode" })
+keymap.set("n", "<leader>lx", "<cmd>Leet submit<cr>", { desc = "Submit Leetcode" })
+keymap.set("n", "<leader>lq", "<cmd>Leet list<cr>", { desc = "View Question List" })
+keymap.set("n", "<leader>le", "<cmd>Leet desc<cr>", { desc = "Toggle desc" })
