@@ -51,6 +51,7 @@ return {
 				"debugpy",
 				"google-java-format",
 				"latexindent",
+				"black",
 			},
 		})
 	end,
