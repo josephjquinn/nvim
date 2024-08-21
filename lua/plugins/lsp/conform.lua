@@ -22,8 +22,9 @@ return {
 				java = { "google_java_format" },
 				tex = { "latexindent" },
 				python = {
-					"ruff_fix", -- To fix lint errors. (ruff with argument --fix)
-					"ruff_format", -- To run the formatter. (ruff with argument format)
+					-- "ruff_fix", -- To fix lint errors. (ruff with argument --fix)
+					-- "ruff_format", -- To run the formatter. (ruff with argument format)
+          "black"
 				},
 			},
 		})
