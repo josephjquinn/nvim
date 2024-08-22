@@ -24,8 +24,9 @@ return {
 				python = {
 					"ruff_fix", -- To fix lint errors. (ruff with argument --fix)
 					"ruff_format", -- To run the formatter. (ruff with argument format)
-          -- "black"
+					-- "black"
 				},
+				cpp = { "clang_format" },
 			},
 		})
 

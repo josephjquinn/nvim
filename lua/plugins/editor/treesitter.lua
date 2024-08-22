@@ -37,6 +37,7 @@ return {
 					"lua",
 					"vim",
 					"gitignore",
+          "cpp",
 				},
 				sync_install = false,
 				incremental_selection = {
